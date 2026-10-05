@@ -119,8 +119,8 @@ def _render_frame_worker(task: tuple) -> None:
 
     ## Axis labels + title
     scale_label = cfg.scaling_labels[scale_type]   # e.g. "log_{10}(1 + AU)"
-    ax.set_xlabel(f"Distance [{scale_label}]", color="black", fontsize=13)
-    ax.set_ylabel(f"Distance [{scale_label}]", color="black", fontsize=13)
+    ax.set_xlabel(f"{scale_label}", color="black", fontsize=13)
+    ax.set_ylabel(f"{scale_label}", color="black", fontsize=13)
     ax.set_title("The Solar System", color="black", fontsize=18)
 
     ## Timestamp box (lower-left), matching the image
