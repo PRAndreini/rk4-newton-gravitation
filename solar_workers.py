@@ -56,7 +56,8 @@ _g_shm_x = None
 def _worker_init(cfg: PlotConfig, shm_x_name, arr_shape, scale_type: str):
     """
        Initializes a "_render_frame_worker(...)" in a computationally-efficient manner.
-        Declares the necessary global variables, and then loads them in every time a new "_render_frame_worker(...)" is spawned.
+        Declares the necessary global variables, and then loads them in every time a new
+            "_render_frame_worker(...)" is spawned.
         Helper method for "_render_frame_worker(...)", below.
     """
     global _g_cfg, _g_shape, _g_arr_x, _g_shm_x
